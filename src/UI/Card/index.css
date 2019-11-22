@@ -1,0 +1,10 @@
+.entry_card {
+    width: 80vw;
+    height: 70vh;
+    margin: 15vh 10vw 15vh 10vw;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    background-color: white;
+    display: flex;
+}

@@ -1,0 +1,39 @@
+@import '~antd/dist/antd.css';
+.InputGroup {
+    position: fixed;
+    top: 5%;
+    left: 2%;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.size_label {
+    margin-right: 5px;
+    font-weight: normal;
+    font-size: 1.17em;
+    width: 50px;
+    display: inline-block;
+}
+
+.size_button {
+    margin-right: 10px;
+}
+
+.buttonGroup {
+    margin-top: 5%;
+}
+
+
+.AddButton{
+    margin: 10% 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none;
+    background-color: #1890ff;
+    color: white;  
+    width: 220px;
+    height: 40px;
+    font-size: 1.17em;
+}

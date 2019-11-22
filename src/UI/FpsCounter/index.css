@@ -1,0 +1,16 @@
+
+#FpsCounterContaier {
+    position: fixed;
+    right: 50%;
+    width: 8%;
+    height: 5%;
+    background-color: white;
+    border-radius: 10%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+#FpsCounter {
+    font-weight: bolder;
+    font-size: 24px;
+}

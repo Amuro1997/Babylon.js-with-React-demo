@@ -1,0 +1,18 @@
+#IOContainer {
+    position: fixed;
+    top: 60%;
+    left: 2%;
+    height: 30%;
+    width: 15%;
+}
+
+
+.ioButton {
+    height: 25%;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 3%;
+    background-color: #8b9dc3;
+    font-size: 35px;
+    color: white;
+}

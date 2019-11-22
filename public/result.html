@@ -1,0 +1,19 @@
+<html>
+    <body style="position: absolute; top:500px; font: 300px">
+        <p id='nickName'></p>
+        <img id='avatar'></img>
+            <script>
+            function getNickName() {
+                var url = window.location.href.indexOf("nickName=");
+                return window.location.href.substring(url+9);
+            }
+
+            function getAvatar() {
+                var url = window.location.href.indexOf("url=");
+                return window.location.href.substring(url+4);
+            }
+            document.getElementById('nickName').innerText = getNickName();
+            document.getElementById('avatar').src = getAvatar();
+        </script>
+    </body>
+</html>

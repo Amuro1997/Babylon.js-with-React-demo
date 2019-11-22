@@ -1,0 +1,12 @@
+@import '~antd/dist/antd.css';
+.Accessory_img, .Accessory_img:hover{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.Accessory_img:hover {
+    border-radius: 50%;
+}

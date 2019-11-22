@@ -1,0 +1,48 @@
+
+.TexturePanel {
+        position: fixed;
+        bottom: 2%;
+        display: flex;
+        left: 40%;
+}
+
+.card {
+    display: inline-block;
+    height: 60px;
+    width: 90px;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    box-shadow: -8px 11px 26px 0px rgba(230,230,230,1);
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -30px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }

@@ -1,0 +1,52 @@
+@import '~antd/dist/antd.css';
+
+.AccessoryPanel {
+    position: fixed;
+    right: 0%;
+    width: 20%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.Item_Container{
+    overflow: scroll;
+    height: 60%;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.Accessory_button{
+    position: fixed;
+    right: 18%;
+    top: 45%;
+    height: 50px;
+    width: 50px;
+    z-index: 1000;
+}
+
+.AccessoryPanel_minimize {
+    display: none;
+}
+
+.Accessory_button_minimize {
+    right: -10%;
+    top: 35%;
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+}
+
+.selection_cancel, .remove_accessory{
+    margin: 2% 0 0 0;
+    padding: 0;
+    outline: none;
+    border-radius: 5%;
+    width: 150px;
+    height: 50px;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    background-color: rgb(237, 109, 100);
+    color: white;
+}
