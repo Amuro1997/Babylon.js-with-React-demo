@@ -6674,10 +6674,10 @@ mobx-react@^5.0.0:
     hoist-non-react-statics "^3.0.0"
     react-lifecycles-compat "^3.0.2"
 
-mobx@^^4.2.0:
-  version "4.12.0"
-  resolved "https://registry.npm.taobao.org/mobx/download/mobx-4.12.0.tgz?cache=0&sync_timestamp=1573166239828&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmobx%2Fdownload%2Fmobx-4.12.0.tgz#9032d7cf077497b4356fa4ef6f2ee81e568114fe"
-  integrity sha1-kDLXzwd0l7Q1b6Tvby7oHlaBFP4=
+mobx@^4.2.0:
+  version "4.15.1"
+  resolved "https://registry.npm.taobao.org/mobx/download/mobx-4.15.1.tgz#492cba4c64682f6ea4e24d2d5e3c32e7b9ae1c12"
+  integrity sha1-SSy6TGRoL26k4k0tXjwy57muHBI=
 
 moment@2.x, moment@^2.24.0:
   version "2.24.0"

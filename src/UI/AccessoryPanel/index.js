@@ -3,7 +3,6 @@ import "./index.css"
 import AccessoryItem from "./components/AccessoryItem";
 import Button from 'antd/es/button';
 import Store from "../../Shared/Store";
-import babylonContext from "../../BabylonContext";
 import { Tabs } from 'antd';
 
 const boardImg = "https://mobileimages.lowes.com/product/converted/053608/053608611772.jpg";

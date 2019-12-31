@@ -2,10 +2,6 @@
 import * as babylon from "babylonjs"
 import { Vector3 } from "babylonjs";
 import * as utils from "./Shared/Util"
-import * as url from "./resources/model/scene.glb"
-import * as ground from "./resources/model/car.glb"
-import * as obj from "./resources/model/shelf.glb"
-import shelfTexture from "./resources/shelf.bmp"
 import 'babylonjs-loaders';
 class Context {
 
@@ -61,27 +57,6 @@ class Context {
         this.roomCube.material.diffuseColor = new babylon().Color3.Blue;
     }
 
-    initLittleTokyo = () => {
-        babylon.SceneLoader.ImportMesh("", url.default, "", this.scene, (scene) => {
-            console.log(scene)
-        });
-
-    }
-
-    initGround = () => {
-        babylon.SceneLoader.ImportMesh("", ground.default, "", this.scene, (meshes) => {
-            const root = new babylon.TransformNode("", this.scene);
-            meshes.forEach(mesh => {
-                mesh.parent = root;
-            })
-            root.position.y -= 3300;
-            // root.rotate(new babylon.Vector3(0,0,1), Math.PI/2);
-            // root.rotate(new babylon.Vector3(-1,0,0),Math.PI/2);
-            
-        });
-    }
-
-
     setupCamera = () => {
         let position = new Vector3(0,100,300);
         this.camera = new babylon.ArcRotateCamera("camear", Math.PI / 2, Math.PI /2, 20,position,this.scene);
@@ -93,14 +68,7 @@ class Context {
     }
 
     init = () => {
-        // this.initGround();
         utils.generateShelf(50,201, 35);
-        // this.initLittleTokyo();
-        // babylon.SceneLoader.ImportMesh("", obj.default, "", this.scene, (scene) => {
-        //     let m = scene[0];
-        //     m.material = new babylon.StandardMaterial("", this.scene);
-        //     // m.material.baseTexture = new babylon.Texture(shelfTexture.url, this.scene);
-        // });
     }
 
     render = () => {
