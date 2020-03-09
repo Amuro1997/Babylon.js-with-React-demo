@@ -13,7 +13,7 @@ class Context {
     }
 
     setupEngine = () => {
-        this.engine = new babylon.Engine(this.canvas, true, {stencil: true});
+        this.engine = new babylon.Engine(this.canvas, true, {preserveDrawingBuffer: true, stencil: true});
     }
 
     setupScene = () => {
@@ -101,8 +101,10 @@ class Context {
         this.setUpShadowGenerator();
         this.setUpEvent();
         this.setupHighLightLayer();
-        Window.createScreenShot = () => babylon.Tools.CreateScreenshot(this.engine, this.camera, 100,(data) => {
-            console.log(data);
+        Window.createScreenShot = (size) =>  new Promise((resolve, reject) => {
+            babylon.Tools.CreateScreenshot(this.engine, this.camera, size,(data) => {
+                resolve(data)
+            })
         })
     }
 }
