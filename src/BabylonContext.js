@@ -25,7 +25,7 @@ class Context {
         const mat = new babylon.StandardMaterial("", this.scene);
         mat.diffuseColor = new babylon.Color3.FromHexString("#f0f0f0");
         ground.material = mat;
-        ground.receiveShadows = true;	
+        ground.receiveShadows = true;
     }
 
     setupLight = () => {
@@ -37,7 +37,7 @@ class Context {
         this.directionalLight.diffuse = new babylon.Color3.FromHexString("#fff3e7");
         this.directionalLight.intensity = 2;
         this.directionalLight.range = 1000;
-        
+
         // this.spotlight = new babylon.PointLight("", new babylon.Vector3(25, 150, 50), this.scene);
         // this.spotlight.diffuse = new babylon.Color3.FromHexString("#fff3e7");
         // this.spotlight.intensity = 1;
@@ -101,6 +101,9 @@ class Context {
         this.setUpShadowGenerator();
         this.setUpEvent();
         this.setupHighLightLayer();
+        Window.createScreenShot = () => babylon.Tools.CreateScreenshot(this.engine, this.camera, 100,(data) => {
+            console.log(data);
+        })
     }
 }
 
